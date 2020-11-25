@@ -8,4 +8,5 @@ branches:
 
 build: off
 
+build_script:
   - ./gradlew test --info
