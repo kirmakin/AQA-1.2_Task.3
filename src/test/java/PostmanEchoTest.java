@@ -21,7 +21,7 @@ public class PostmanEchoTest {
                 .contentType(ContentType.JSON)
                 .body("data", equalTo(s))
                 .body("headers.content-length", equalTo("9"))
-                .body("headers.user-agent", equalTo("Apache-HttpClient/4.5.3 (Java/11.0.8)"))
+                .body("headers.user-agent", equalTo("Apache-HttpClient/4.5.3 (Java/11)"))
                 .body(matchesJsonSchemaInClasspath("postmanEcho.schema.json"))
         ;
     }
